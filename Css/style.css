@@ -1,0 +1,145 @@
+/* Seletor universal*/ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth; /* movimento suave para navegação*/
+}
+
+body{
+    background-color: black;
+    background: linear-gradient(135deg, rgb(161, 39, 39), rgb(66, 13, 13), rgb(172, 37, 37)); /* degradê*/
+    background-size: 400% 400%; /* deixa o background fluído*/
+    animation: gradientBackground 10s ease infinite; /*animação infinita*/
+    color: #fff;
+}
+
+@keyframes gradientBackground{
+    0% {background-position: 0% 50%;} /* Inicio, a posição do fundo está na esquerda horizontalmente (0%) e meio vertical, sendo uma cor só*/
+    50% { background-position: 100% 50%; } /* no meio da animação, fundo se move para direita (100%) na vertical*/
+    100% { background-position: 0% 50%; } /* volta para posição inicial*/ /* 0% inicio, 50% meio, 100% final*/
+}
+
+header nav{ 
+    position: absolute; /* posição fixa*/
+    padding: 20px 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+/* lista*/ 
+header ul{
+   display: flex;
+   gap: 20px;
+   position: absolute;
+   right: 0;
+   font-weight: bolder;
+   font-size: 18px;
+  
+}
+
+header li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+
+header li a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.icone {
+    position: absolute;
+    width: 102px; /* largura*/
+    height: 100px; /*indica altura do item/imagem*/
+    left: 0; /* vai para direita*/
+    top: 0;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* inicio*/
+.text{
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold; /* estilo da fonte */
+    top: 200px;
+    left: 0;
+}
+.text h1{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+}
+
+.text p{
+    font-size: 12px;
+}
+
+
+.skills{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills img{
+    width:80px;
+    height: 80px;
+    transition: transform 0.5s ease-in-out; /* começa devagar, acelera no meio e para no final*/
+}
+
+.skills img:hover{
+    transform: scale(1.2); /* */
+}
+
+#about{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    height: 30vh;
+    color: white;
+}
+
+#about h1{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(233, 233, 233);
+    top: -10px;
+}
+
+#about h2{
+    font-size: 2rem; /* tamanho da fonte*/
+}
+
+#about p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+p{
+    color: white;
+}
+
+.contact{
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+footer{
+    position: relative;
+    height: 50px;
+    background-color: #0b0e11;
+    color: white;
+}
