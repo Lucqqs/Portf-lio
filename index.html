@@ -1,66 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Portfolio/Css/style.css">
-    <link rel="stylesheet" href="../Portfolio/Css/reset.css">
-    <link rel="icon" type="image/png" href="/Portfolio/Img/luke1.png">
-     <title>LUCAS - Portfólio</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/reset.css">
 
+    <link rel="icon" type="image/png" href="./Img/luke1.png">
+    <title>LUCAS - Portfólio</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#projetos">Contato</a></li>
+                <li><a href="#contato">Contato</a></li> <!-- Alterado para "contato" -->
             </ul>
-            <img class="icone"src="../Portfolio/Img/luke1.png" alt="icon">
+            <img class="icone" src="./Img/luke1.png" alt="Icone do Lucas">
         </nav>
     </header>
 
     <main>
-    <!--ancora para levar para a mesma pagina-->
-    <section id="home" class="section">
-        <div class="text">
-        <h1>Frontend <br> Developer</h1>
-        <p>Transformando ideias em realidade</p>
-    </div>
-    </section>
+        <!-- Seção Home -->
+        <section id="home" class="section">
+            <div class="text">
+                <h1>Frontend <br> Developer</h1>
+                <p>Desenvolvedor front-end apaixonado por tecnologia e design</p>
+            </div>
+            <div class="logoicon" alt="icone">
+                <img src="./Img/user.png" alt="user">
 
+            </div>
 
-    <section id="about" class="section">
-        <div class="about-container">
-     <h1>SOBRE MIM</h1>
-    <p>Habilidades:</p>
-       
-   <div class="skills">
-    <img src="/Portfolio/Img/js.png" alt="js">
-    <img src="/Portfolio/Img/html.png" alt="html">
-    <img src="/Portfolio/Img/css.png" alt="css">
-    <img src="/Portfolio/Img/php.png" alt="css">
-    <img src="/Portfolio/Img/sql.png" alt="css">
+        </section>
 
-    </div>
-       </div> 
-          </section> 
-<section id="projetos" class="section">
-    <h1>Projetos</h1>
-    <div class="projeto-container">
-        <div class="projeto-card">
-            <img src="" alt="">
-        </div>
-    </div>
-</section>
-
-</main>
- 
-<footer>
-    <p>&copy; Todos os direitos reservados</p>
-   </footer> 
-
+        <!-- Seção Sobre -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <h1>SOBRE MIM</h1>
+                <p class="sub-description">Olá, sou Lucas! Um desenvolvedor Front-End apaixonado por tecnologia e design. Estou constantemente aprendendo e me aperfeiçoando para criar experiências digitais incríveis. Meu objetivo é transformar ideias criativas em soluções funcionais e visualmente impactantes.</p>
+                <p class="sub-description">Minhas principais habilidades incluem o desenvolvimento com <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>PHP</strong>, e <strong>SQL</strong>. Tenho experiência prática em criar sites e aplicações responsivas, otimizar o desempenho de páginas e trabalhar com frameworks modernos. Adoro enfrentar novos desafios e sempre busco novas maneiras de melhorar minhas habilidades.</p>
+                
+                <div class="skills">
+                    <div class="skill-item">
+                        <img src="./Img/js.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./Img/html.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./Img/css.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./Img/php.png" alt="PHP">
+                        <p>PHP</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./Img/sql.png" alt="SQL">
+                        <p>SQL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         
+        
+
+        <!-- Seção Projetos -->
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <h1>Contato</h1>
+            <p>Se você deseja entrar em contato, envie uma mensagem para <a href="mailto:contato@lucas.com">veigalucas876@gmail.com</a></p>
+        </section>
+
+    </main>
 </body>
+
+<footer>
+    <p>&copy; Todos os direitos reservados - Lucas</p>
+</footer>
+
 </html>

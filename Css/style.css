@@ -21,7 +21,7 @@ body{
 }
 
 header nav{ 
-    position: absolute; /* posição fixa*/
+    position: fixed; /* posição fixa*/
     padding: 20px 0;
     width: 100%;
     top: 0;
@@ -76,56 +76,106 @@ section{
     top: 200px;
     left: 0;
 }
-.text h1{
-    font-size: 45px;
-    color: rgb(0, 0, 0);
+
+.text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #663105, #b66406, #914406); /* Degradê suave em cores vibrantes */
+    -webkit-background-clip: text; /* Degradê no texto */
+    background-clip: text;
+    color: transparent; /* Texto transparente para aplicar o degradê */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .text p{
     font-size: 12px;
 }
 
-
-.skills{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.skills img{
-    width:80px;
-    height: 80px;
-    transition: transform 0.5s ease-in-out; /* começa devagar, acelera no meio e para no final*/
-}
-
-.skills img:hover{
-    transform: scale(1.2); /* */
-}
-
-#about{
+.logoicon{
     position: absolute;
-    left: 0;
-    padding: 10px;
-    height: 30vh;
+    top: 190px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+     
+}
+
+
+
+#about {
+    padding: 80px 20px;
     color: white;
+    text-align: center;
 }
 
-#about h1{
-    position: relative;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: rgb(233, 233, 233);
-    top: -10px;
-}
-
-#about h2{
-    font-size: 2rem; /* tamanho da fonte*/
-}
-
-#about p{
-    font-size: 1.2rem;
+#about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FF6347, #FFA500, #FF1493); /* Degradê suave em cores vibrantes */
+    -webkit-background-clip: text; /* Degradê no texto */
+    background-clip: text;
+    color: transparent; /* Texto transparente para aplicar o degradê */
     margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
+#about .sub-description {
+    font-size: 1.2rem;
+    color: #f2f2f2; /* Cor suave para o texto */
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.skill-item {
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 2px solid #FFA500; /* Cor laranja nas bordas */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFA500; /* Texto laranja para as habilidades */
+    margin-top: 10px;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px); /* Efeito de destaque */
+    opacity: 0.9;
+    background-color: rgba(255, 165, 0, 0.1); /* Fundo suave com laranja */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item img:hover {
+    transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
+}
+
 
 p{
     color: white;
